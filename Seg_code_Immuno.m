@@ -9,7 +9,7 @@ listing = dir;
 s = listing(arrayfun(@(x) ~strcmp(x.name(1),'.'),listing));
 
 for i=1:length(s)
-    file='/Volumes/ROGER ORIA/Nuria/CD68 TIFF/Control 2 U(1)_1_CD68 1-100 - 2024-06-28 15.24.42 - Series 3.tif'
+    
     file= fullfile('folder_path',s(i).name)
     %read images
     im= tiffreadVolume(file);
